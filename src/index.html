@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Titanic Test Task</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <input type="text" id="searchInput" placeholder="Search..." />
+
+      <div id="wrapperTable">
+        <table id="passengersTable">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Name</th>
+              <th>Gender</th>
+              <th>Age</th>
+              <th>Survived</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+
+      <div id="loader" class="hidden">Loading...</div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
