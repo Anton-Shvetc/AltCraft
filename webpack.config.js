@@ -3,23 +3,23 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
-  entry: "./src/index.js", // Путь к главному файлу JS
+  entry: "./src/index.js", 
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js", // Имя выходного JS файла
+    filename: "bundle.js", 
   },
   module: {
     rules: [
       {
-        test: /\.css$/, // Расширение файлов для обработки CSS
-        use: ["style-loader", "css-loader"], // Подключение стилей внутри JS файла
+        test: /\.css$/, 
+        use: ["style-loader", "css-loader"], 
       },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/index.html", // Путь к главному файлу HTML
-      filename: "index.html", // Имя выходного HTML файла
+      template: "./src/index.html", 
+      filename: "index.html", 
     }),
   ],
 };
