@@ -50,11 +50,14 @@ function handleSearch() {
     const lowerCaseName = passenger.name.toLowerCase();
     const lowerCaseGender = passenger.gender.toLowerCase();
     const lowerCaseAge = String(Math.round(passenger.age)).toLowerCase();
+    const isSurvival = passenger.survived ? "survived" : "not";
+
 
     return (
       lowerCaseName.includes(searchTerm) ||
-      lowerCaseGender.includes(searchTerm) ||
-      lowerCaseAge.includes(searchTerm)
+      lowerCaseGender === searchTerm ||
+      lowerCaseAge.includes(searchTerm) ||
+      isSurvival.includes(searchTerm)
     );
   });
 
