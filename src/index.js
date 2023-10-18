@@ -1,3 +1,4 @@
+import "./styles.css";
 const tableBody = document.getElementById("tableBody");
 const searchInput = document.getElementById("searchInput");
 const loader = document.getElementById("loader");
